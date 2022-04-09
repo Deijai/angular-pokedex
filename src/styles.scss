@@ -1,0 +1,14 @@
+@use './styles/variables.scss';
+@use './styles/reset.scss';
+@use './styles/rem-calc.scss';
+
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-color);
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}

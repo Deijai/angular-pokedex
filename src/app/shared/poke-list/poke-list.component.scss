@@ -1,0 +1,61 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .pokemon {
+    position: relative;
+    display: flex;
+    width: calc(49% - 40px);
+    background: var(--branco);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    height: calc(157px - 40px);
+    text-decoration: none;
+    color: var(--primary);
+    cursor: pointer;
+
+    &__status {
+      h2 {
+        font-size: 22px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          background-color: var(--cinza);
+          font-size: 10px;
+          font-weight: regular;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          border-radius: 50px;
+          width: 60px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    &__image {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 90px;
+      width: 110px;
+      right: 20px;
+      bottom: 20px;
+      background: url('../../../assets//bg-list.svg') no-repeat;
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}
